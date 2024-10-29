@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8d65hkp6vq65"]
+
+[ext_resource type="Texture2D" uid="uid://dfkrt6jsfq7nl" path="res://images/000000096946.jpg" id="1_vaocs"]
+[ext_resource type="Texture2D" uid="uid://b5hvjnofdfta8" path="res://sprites/Paint.png" id="2_r6d0e"]
+[ext_resource type="Texture2D" uid="uid://tt1gye0aab5o" path="res://sprites/Food.png" id="3_kvkaw"]
+[ext_resource type="PackedScene" uid="uid://bonhy20uwlp78" path="res://scenes/welcome.tscn" id="4_pr05g"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="000000096946" type="Sprite2D" parent="."]
+position = Vector2(765, 453.125)
+scale = Vector2(2.35692, 2.08256)
+texture = ExtResource("1_vaocs")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(587, 581)
+scale = Vector2(2.35692, 2.08256)
+
+[node name="Paint" type="Sprite2D" parent="."]
+position = Vector2(93, 418)
+scale = Vector2(0.0869141, 0.0842286)
+texture = ExtResource("2_r6d0e")
+
+[node name="Food" type="Sprite2D" parent="."]
+position = Vector2(88, 313)
+scale = Vector2(5, 4.875)
+texture = ExtResource("3_kvkaw")
+
+[node name="Node2D" parent="." instance=ExtResource("4_pr05g")]
+position = Vector2(58, 131)

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bonhy20uwlp78"]
+
+[ext_resource type="Texture2D" uid="uid://bjr0wl2pybu17" path="res://sprites/welcome.png" id="1_mdtoe"]
+[ext_resource type="Texture2D" uid="uid://4ek7i8m2gv8k" path="res://images/wp7991972.jpg" id="2_b7gvm"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Welcome" type="Sprite2D" parent="."]
+position = Vector2(529, 372)
+scale = Vector2(0.669508, 0.500607)
+texture = ExtResource("1_mdtoe")
+
+[node name="cool website" type="Sprite2D" parent="Welcome"]
+position = Vector2(-2.0291, 16.484)
+scale = Vector2(0.259266, 0.693876)
+texture = ExtResource("2_b7gvm")
